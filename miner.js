@@ -47,7 +47,7 @@ function booty() {
           miner.stop()
           console.log('stopping process for a break, now in the restart loop');
 
-          setTimeout(async () => await restart(), interval);
+          setTimeout(async () => await restart(), interval / 3);
 
         }, interval);
       } else {
@@ -61,7 +61,7 @@ function booty() {
       // miner.start()
       console.log('stopping process for a break, initial start');
 
-      setTimeout(async () => await restart(), interval);
+      setTimeout(async () => await restart(), interval / 3);
 
     }, interval);
   })();
