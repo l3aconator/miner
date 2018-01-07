@@ -4,12 +4,19 @@
   "description": "",
   "main": "miner.js",
   "scripts": {
-    "start": "node miner.js",
+    "start": "nodemon miner.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/*"
+    ],
+    "delay": "2500"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "coin-hive": "^1.10.0"
+    "coin-hive": "^1.10.0",
+    "nodemon": "^1.14.8"
   }
 }
